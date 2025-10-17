@@ -315,133 +315,141 @@ export const examCategories: ExamCategory[] = [
         category: 'Engineering & Technical',
         exams: [
           {
-            examId: 'jee-main-advanced',
-            examName: 'JEE Main / JEE Advanced',
-            description: 'For admission to undergraduate engineering programs in IITs, NITs, etc.',
-            stages: [
-              {
-                stageId: 'jee-main',
-                stageName: 'JEE Main',
-                papers: [
-                  {
-                    paperId: 'paper1',
-                    paperName: 'Paper 1 - B.E./B.Tech',
-                    type: 'Objective (MCQ and Numerical Value)',
-                    duration: '3 hours',
-                    totalMarks: 300,
-                    sections: [
-                      {
-                        sectionName: 'Physics',
-                        topics: [
-                          'Physics and Measurement',
-                          'Kinematics',
-                          'Laws of Motion',
-                          'Work, Energy and Power',
-                          'Rotational Motion',
-                          'Gravitation',
-                          'Properties of Solids and Liquids',
-                          'Thermodynamics',
-                          'Kinetic Theory of Gases',
-                          'Oscillations and Waves',
-                        ],
-                      },
-                      {
-                        sectionName: 'Chemistry',
-                        topics: [
-                          'Some Basic Concepts of Chemistry',
-                          'Atomic Structure',
-                          'Chemical Bonding and Molecular Structure',
-                          'Chemical Thermodynamics',
-                          'Equilibrium',
-                          'Redox Reactions',
-                          'The Periodic Table and the Periodic Law',
-                          'Hydrogen',
-                          'The s-Block Element',
-                          'The p-Block Element',
-                          'The d-Block and f-Block Elements',
-                          'Organic Chemistry',
-                        ],
-                      },
-                      {
-                        sectionName: 'Mathematics',
-                        topics: [
-                          'Sets, Relations and Functions',
-                          'Complex Numbers and Quadratic Equations',
-                          'Matrices and Determinants',
-                          'Permutations and Combinations',
-                          'Mathematical Induction',
-                          'Binomial Theorem and Its Applications',
-                          'Sequences and Series',
-                          'Limits, Continuity and Differentiability',
-                          'Integral Calculus',
-                          'Differential Equations',
-                          'Coordinate Geometry',
-                          'Three Dimensional Geometry',
-                          'Vector Algebra',
-                          'Statistics and Probability',
-                          'Trigonometry',
-                        ],
-                      },
-                    ],
-                  },
-                ],
-              },
-              {
-                stageId: 'jee-advanced',
-                stageName: 'JEE Advanced',
-                papers: [
-                  {
-                    paperId: 'paper1',
-                    paperName: 'Paper 1',
-                    type: 'Objective and Subjective',
-                    duration: '3 hours',
-                    totalMarks: 180,
-                    sections: [
-                      {
-                        sectionName: 'Physics',
-                        topics: [
-                          'General Physics',
-                          'Mechanics',
-                          'Thermodynamics',
-                          'Electricity and Magnetism',
-                          'Optics',
-                          'Modern Physics',
-                        ],
-                      },
-                      {
-                        sectionName: 'Chemistry',
-                        topics: [
-                          'Physical Chemistry',
-                          'Inorganic Chemistry',
-                          'Organic Chemistry',
-                        ],
-                      },
-                      {
-                        sectionName: 'Mathematics',
-                        topics: [
-                          'Algebra',
-                          'Trigonometry',
-                          'Analytical Geometry',
-                          'Differential Calculus',
-                          'Integral Calculus',
-                          'Vectors',
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    paperId: 'paper2',
-                    paperName: 'Paper 2',
-                    type: 'Objective and Subjective',
-                    duration: '3 hours',
-                    totalMarks: 180,
-                    // Similar topics as Paper 1 but with different question pattern
-                  },
-                ],
-              },
-            ],
-            totalMarks: 480,
-          },
+  examId: 'jee-main-advanced',
+  examName: 'JEE Main / JEE Advanced',
+  description: 'For admission to undergraduate engineering programs in IITs, NITs, etc. The overall syllabus is based on the entire Class XI and XII curriculum (NCERT/CBSE level).',
+  stages: [
+    {
+      stageId: 'jee-main',
+      stageName: 'JEE Main (Paper 1 - B.E./B.Tech)',
+      papers: [
+        {
+          paperId: 'main-paper-1',
+          paperName: 'B.E./B.Tech Objective Exam',
+          type: 'Objective (MCQ and Numerical Value)',
+          duration: '3 hours',
+          totalMarks: 300,
+          sections: [
+            {
+              sectionName: 'Physics',
+              topics: [
+                'Physics and Measurement (Units, Dimensions, Errors)',
+                'Kinematics (Motion in 1D and 2D)',
+                'Laws of Motion (Newton’s Laws, Friction)',
+                'Work, Energy, and Power (Conservation of Energy)',
+                'Rotational Motion (Moment of Inertia, Torque, Angular Momentum)',
+                'Gravitation (Kepler’s Laws, Acceleration due to Gravity)',
+                'Properties of Solids and Liquids (Elasticity, Surface Tension, Fluid Dynamics)',
+                'Thermodynamics (First and Second Law, Specific Heats)',
+                'Kinetic Theory of Gases (K.T.G.)',
+                'Oscillations and Waves (SHM, Doppler Effect, Transverse/Longitudinal waves)',
+                'Electrostatics (Coulomb’s Law, Gauss’s Theorem, Capacitors)',
+                'Current Electricity (Ohm’s Law, Kirchhoff’s Rules, Heating Effects)',
+                'Magnetic Effects of Current and Magnetism (Biot-Savart Law, Permanent Magnets)',
+                'Electromagnetic Induction (EMI) and Alternating Current (AC)',
+                'Electromagnetic Waves (EM Waves)',
+                'Optics (Ray Optics: Reflection, Refraction, Instruments; Wave Optics: Interference, Diffraction, Polarization)',
+                'Modern Physics (Dual Nature of Matter, Atoms and Nuclei, Radioactivity)',
+                'Electronic Devices (Semiconductors, Diodes, Transistors, Logic Gates)',
+                'Communication Systems (Basics, Modulation/Demodulation)',
+              ],
+            },
+            {
+              sectionName: 'Chemistry',
+              topics: [
+                // Physical Chemistry
+                'Stoichiometry and Mole Concept (Basic Concepts)',
+                'States of Matter (Gaseous, Liquid, Solid State)',
+                'Chemical Thermodynamics (Laws, Enthalpy, Entropy, Gibbs Energy)',
+                'Equilibrium (Chemical and Ionic)',
+                'Surface Chemistry (Adsorption, Colloids)',
+                'Chemical Kinetics (Rate Laws, Order of Reactions)',
+                'Solutions (Colligative Properties)',
+                'Electrochemistry (Cells, Electrolysis, Conductance)',
+                // Inorganic Chemistry
+                'Atomic Structure and Chemical Bonding',
+                'Periodic Classification of Elements (Periodic Trends)',
+                'Hydrogen and S-Block Elements',
+                'P-Block Elements (Groups 13 to 18)',
+                'D and F Block Elements (Transition and Inner-Transition)',
+                'Coordination Compounds and Environmental Chemistry',
+                'Metallurgy (Principles and Processes)',
+                // Organic Chemistry
+                'Purification and Basic Principles of Organic Chemistry (Nomenclature, Isomerism)',
+                'Hydrocarbons (Alkanes, Alkenes, Alkynes)',
+                'Haloalkanes and Haloarenes',
+                'Alcohols, Phenols, and Ethers',
+                'Aldehydes, Ketones, and Carboxylic Acids',
+                'Nitrogen Containing Compounds (Amines, Diazonium Salts)',
+                'Polymers, Biomolecules, and Chemistry in Everyday Life',
+              ],
+            },
+            {
+              sectionName: 'Mathematics',
+              topics: [
+                'Sets, Relations and Functions',
+                'Complex Numbers & Quadratic Equations',
+                'Matrices & Determinants',
+                'Permutations & Combinations',
+                'Binomial Theorem and Its Applications',
+                'Sequences & Series (Arithmetic, Geometric, Harmonic Progressions)',
+                'Limits, Continuity & Differentiability',
+                'Integral Calculus (Definite and Indefinite)',
+                'Differential Calculus (Applications of Derivatives)',
+                'Differential Equations (First Order, Linear)',
+                'Coordinate Geometry (2D & 3D: Straight Lines, Circles, Conics, Planes, Straight lines in 3D)',
+                'Vector Algebra',
+                'Statistics & Probability (Measures of Dispersion, Probability, Binomial Distribution)',
+                'Trigonometry (Ratios, Identities, Equations)',
+                'Mathematical Induction and Reasoning',
+              ],
+            },
+          ],
+          notes: 'This paper determines ranking for admission to NITs/IIITs and eligibility for JEE Advanced.',
+        },
+      ],
+    },
+    {
+      stageId: 'jee-advanced',
+      stageName: 'JEE Advanced (Admission to IITs) - Core Syllabus Applied',
+      papers: [
+        {
+          paperId: 'advanced-paper-1',
+          paperName: 'Advanced – Paper 1',
+          type: 'Multiple Choice/Numerical/Matrix Match (Advanced Level)',
+          duration: '3 hours',
+          totalMarks: 180, 
+          sections: [
+            {
+              sectionName: 'Physics, Chemistry, and Mathematics (Entire Syllabus)',
+              topics: [
+                'All topics from the JEE core syllabus (same as JEE Main list), tested with **high analytical complexity** and requiring **deep conceptual understanding**.',
+              ],
+            },
+          ],
+          notes: 'Paper 1 is one half of the ranking criteria. Syllabus is the full JEE curriculum, emphasizing complex, multi-concept problems.',
+        },
+        {
+          paperId: 'advanced-paper-2',
+          paperName: 'Advanced – Paper 2',
+          type: 'Multiple Choice/Numerical/Matrix Match (Advanced Level)',
+          duration: '3 hours',
+          totalMarks: 180, 
+          sections: [
+            {
+              sectionName: 'Physics, Chemistry, and Mathematics (Entire Syllabus)',
+              topics: [
+                'All topics from the JEE core syllabus (same as JEE Main list), tested with **high analytical complexity** and requiring **deep conceptual understanding**.',
+              ],
+            },
+          ],
+          notes: 'Paper 2 is the second half of the ranking criteria. Final rank depends on the aggregate score of Paper 1 and Paper 2.',
+        },
+      ],
+    },
+  ],
+  totalMarks: 480,
+},
           {
             examId: 'gate',
             examName: 'GATE (Graduate Aptitude Test in Engineering)',
@@ -515,7 +523,129 @@ export const examCategories: ExamCategory[] = [
       {
           category: 'Medical / Science / Research',
           exams: [
-              { examId: 'neet-ug-pg', examName: 'NEET UG / NEET PG', description: 'National Eligibility cum Entrance Test for medical courses.', stages: [] },
+             {
+  examId: 'neet-ug-pg',
+  examName: 'NEET UG / NEET PG',
+  description: 'National Eligibility cum Entrance Test. UG for MBBS/BDS (Class XI & XII curriculum); PG for MD/MS/PG Diploma (MBBS curriculum).',
+  stages: [
+    {
+      stageId: 'neet-ug',
+      stageName: 'NEET (UG) - Undergraduate Exam (720 Marks)',
+      papers: [
+        {
+          paperId: 'neet-ug-paper',
+          paperName: 'Physics, Chemistry, and Biology (Botany & Zoology)',
+          type: 'Objective (MCQ)',
+          duration: '3 hours 20 minutes',
+          totalMarks: 720,
+          sections: [
+            {
+              sectionName: 'Physics (Class 11 & 12)',
+              marks: 180,
+              topics: [
+                'Physical World and Measurement, Kinematics, Laws of Motion, Work/Energy/Power, Rotational Motion (Torque, Angular Momentum, Moment of Inertia, Parallel/Perpendicular Axes Theorems).',
+                'Gravitation (Kepler’s Laws, Motion/Energy of Satellites, Escape Velocity, Variation of g).',
+                'Properties of Solids and Liquids (Elasticity, Hooke’s Law, Pascal’s Law, Viscosity, Bernoulli’s Principle, Surface Tension, Heat Transfer).',
+                'Thermodynamics (Zeroth, First, and Second Laws, Isothermal/Adiabatic Processes).',
+                'Kinetic Theory of Gases (RMS speed, Degrees of freedom, Law of Equipartition of Energy).',
+                'Oscillations and Waves (SHM, Simple Pendulum, Wave motion, Doppler Effect, Standing Waves).',
+                'Electrostatics (Coulomb’s Law, Electric Field/Potential, Capacitors, Gauss’s Law).',
+                'Current Electricity (Ohm’s Law, Kirchhoff’s Laws, Wheatstone Bridge, Measuring Instruments).',
+                'Moving Charges and Magnetism (Biot-Savart’s Law, Ampere’s Law, Magnetic Dipoles, Dia/Para/Ferromagnetism).',
+                'Electromagnetic Induction and Alternating Currents (Faraday’s Law, Lenz’s Law, LCR circuit, Resonance, Transformer).',
+                'Optics (Ray Optics: Reflection/Refraction, Optical Instruments; Wave Optics: Huygens’ Principle, Interference, Diffraction, Polarization, Brewster’s Law).',
+                'Dual Nature of Matter and Radiation (Photoelectric Effect, de Broglie relation).',
+                'Atoms and Nuclei (Bohr Model, Radioactivity, Nuclear Energy, Mass-Energy relation).',
+                'Electronic Devices (Semiconductors, P-N Junction Diode, Rectifiers, Zener Diode, Logic Gates: OR, AND, NOT, NAND, NOR).',
+                'Experimental Skills (Practical applications, error analysis).',
+              ],
+            },
+            {
+              sectionName: 'Chemistry (Class 11 & 12)',
+              marks: 180,
+              topics: [
+                'Some Basic Concepts of Chemistry (Mole concept, Stoichiometry).',
+                'Atomic Structure (Bohr model, Quantum numbers, Orbitals, Hund’s rule).',
+                'Chemical Bonding and Molecular Structure (Ionic/Covalent bonds, VSEPR Theory, Hybridization, MO Theory).',
+                'Chemical Thermodynamics (Laws, Enthalpy, Entropy, Gibbs Energy).',
+                'Equilibrium (Chemical and Ionic, Le Chatelier’s Principle).',
+                'Redox Reactions and Electrochemistry (Oxidation number, Nernst equation, Galvanic/Electrolytic cells).',
+                'Chemical Kinetics (Rate law, Factors affecting rate, Zero and First-order reactions, Arrhenius theory).',
+                'Solutions (Vapour Pressure, Raoult’s Law, Colligative Properties, van’t Hoff factor).',
+                'Inorganic Chemistry: Classification, Periodicity, P/D/F Block Elements, Coordination Compounds (Nomenclature, Isomerism, VBT, CFT).',
+                'Organic Chemistry: Basic Principles (Nomenclature, Isomerism, Reaction Mechanisms), Hydrocarbons, Haloalkanes/Haloarenes.',
+                'Organic Compounds Containing O & N (Alcohols/Phenols/Ethers, Aldehydes/Ketones/Carboxylic Acids, Amines/Diazonium Salts).',
+                'Biomolecules, Polymers, Chemistry in Everyday Life (Drugs, Food preservatives).',
+                'Principles Related to Practical Chemistry (Purification, Qualitative Analysis).',
+              ],
+            },
+            {
+              sectionName: 'Biology (Botany & Zoology, Class 11 & 12)',
+              marks: 360,
+              topics: [
+                'Diversity in Living World (Classification, Taxonomy, Viruses).',
+                'Structural Organisation in Animals and Plants (Morphology, Anatomy, Animal Tissues, Cockroach).',
+                'Cell Structure and Function (Cell Theory, Organelles, Biomolecules, Enzymes, Cell Cycle & Division).',
+                'Plant Physiology (Transport, Photosynthesis C3/C4, Respiration, Plant Growth Regulators).',
+                'Human Physiology (Digestion, Breathing, Circulation, Excretion, Locomotion, Neural/Chemical Control).',
+                'Reproduction (Reproduction in Organisms, Sexual Reproduction in Plants & Humans, Reproductive Health).',
+                'Genetics and Evolution (Mendelism, Inheritance, Molecular Basis of Inheritance, DNA/RNA, Lac Operon, Human Genome Project, Origin of Life, Darwinism).',
+                'Biology and Human Welfare (Health and Disease, Immunity, Cancer, AIDS, Microbes in Human Welfare).',
+                'Biotechnology and Its Applications (rDNA Technology, Applications in Health/Agriculture, Gene Therapy, Biosafety issues).',
+                'Ecology and Environment (Organisms and Populations, Ecosystem, Biodiversity and Conservation, Environmental Issues).',
+              ],
+            },
+          ],
+          notes: 'Syllabus is exclusively based on the entire Class XI and XII NCERT curriculum.',
+        },
+      ],
+    },
+    {
+      stageId: 'neet-pg',
+      stageName: 'NEET (PG) - Postgraduate Exam (MBBS Curriculum)',
+      papers: [
+        {
+          paperId: 'neet-pg-paper',
+          paperName: 'Medical Sciences (Pre-clinical, Para-clinical, Clinical)',
+          type: 'Objective (MCQ)',
+          totalMarks: 800,
+          sections: [
+            {
+              sectionName: 'Pre-Clinical Subjects',
+              topics: [
+                'Anatomy (Gross Anatomy, Histology, Embryology, Neuroanatomy, Surface Marking).',
+                'Physiology (General Physiology, Haematology, Nerve/Muscle, Cardiovascular, Respiratory, Renal, Neurophysiology, Endocrine).',
+                'Biochemistry (Enzymes, Metabolism of Carbohydrates/Lipids/Proteins, Molecular Biology, Nutrition).',
+              ],
+            },
+            {
+              sectionName: 'Para-Clinical Subjects',
+              topics: [
+                'Pathology (Cell Injury, Inflammation, Neoplasia, Immunopathology, Organ System Pathology).',
+                'Pharmacology (Basic Principles, ANS/CNS Drugs, Chemotherapy, Hormones, Antimicrobials).',
+                'Microbiology (General Microbiology, Immunology, Bacteriology, Virology, Mycology, Parasitology).',
+                'Forensic Medicine (Forensic Pathology, Medical Jurisprudence, Toxicology, Forensic Psychiatry).',
+                'Social & Preventive Medicine (SPM) (Health Concepts, Epidemiology, Biostatistics, Nutrition, Environmental Health, Communicable/Non-Communicable Diseases).',
+              ],
+            },
+            {
+              sectionName: 'Clinical Subjects',
+              topics: [
+                'General Medicine (Cardiology, Respiratory, Renal, Endocrine, Infections, Psychiatry, Dermatology).',
+                'General Surgery (Trauma, Burns, Surgical Infections, Orthopaedics, Anaesthesia, Radiodiagnosis).',
+                'Obstetrics & Gynaecology (Normal/Abnormal Pregnancy, Labour, Contraception, Infertility, Gynaecological Cancers).',
+                'Paediatrics (Growth/Development, Nutrition, Immunization, Neonatology, Pediatric Emergencies).',
+                'Ophthalmology and ENT (Anatomy/Physiology, Diagnostics, Management of Diseases).',
+                'Radiology/Radiotherapy (Diagnostic Imaging, Radiation Safety, Oncology Principles).',
+              ],
+            },
+          ],
+          notes: 'The PG syllabus is holistic, covering all subjects taught during the entire MBBS course as stipulated by the NMC.',
+        },
+      ],
+    },
+  ],
+},
               { examId: 'aiims-jipmer', examName: 'AIIMS / JIPMER Entrance Exams', description: 'Entrance exams for premier medical colleges.', stages: [] },
               { examId: 'icmr-jrf', examName: 'ICMR JRF', description: 'Indian Council of Medical Research Junior Research Fellowship.', stages: [] },
               { examId: 'csir-ugc-net', examName: 'CSIR-UGC NET', description: 'For Junior Research Fellowship and Lectureship in science subjects.', stages: [] },
@@ -699,8 +829,230 @@ export const examCategories: ExamCategory[] = [
       {
           category: 'Andhra Pradesh - Educational Service Exams',
           exams: [
-              { examId: 'ap-tet', examName: 'AP TET (Teacher Eligibility Test)', description: 'Andhra Pradesh Teacher Eligibility Test.', stages: [] },
-              { examId: 'ap-dsc', examName: 'AP DSC (Teacher Recruitment)', description: 'Andhra Pradesh District Selection Committee for teacher recruitment.', stages: [] },
+             {
+  examId: 'ap-tet',
+  examName: 'AP TET (Teacher Eligibility Test)',
+  description: 'Andhra Pradesh Teacher Eligibility Test for recruitment of teachers for Classes I-VIII.',
+  stages: [
+    {
+      stageId: 'tet-paper-i',
+      stageName: 'Paper I (Classes 1 to 5 Teachers)',
+      papers: [
+        {
+          paperId: 'paper-i-cdp',
+          paperName: 'Child Development & Pedagogy',
+          type: 'Objective (MCQ)',
+          totalMarks: 30,
+          topics: [
+            // I. Development of Child
+            'Childhood: meaning, multiple childhoods, parenting, child rearing styles.',
+            'Development, Growth & Maturation — Concept & Nature, Differences.',
+            'Principles of development and their educational implication.',
+            'Factors influencing Development (Biological, Psychological, Sociological, emotional).',
+            'Dimensions of Development (Physical & Motor, Cognitive, Emotional, Social, Moral, Language) relating to Infancy, Early/Late Childhood, Adolescence.',
+            'Understanding Development — Piaget, Kohlberg, Chomsky, Carl Rogers, Erikson.',
+            'Individual differences (Concept, Types, Factors: Heredity & Environment) in Attitudes, Aptitude, Interest, Habits, Intelligence, Creativity, Personality.',
+            'Mental Health, Adjustment, Behavioural problems, Conflicts, Defense Mechanism.',
+            'Methods and Approaches of Child Development (Observation, Interview, Case study, Experimental).',
+
+            // II. Understanding Learning
+            'Learning – Meaning, Concept, Definitions, Characteristics, Types.',
+            'Factors of Learning (Personal and Environmental).',
+            'Dimensions of Learning (Cognitive, Affective and Psycho-Motor).',
+            'Motivation and Sustenance – its role in learning.',
+            'Concepts (Formation, Classification, Development); Perception; Memory & Forgetting; Transfer of Learning.',
+            'Approaches to Learning: Behaviourism (Skinner, Pavlov, Thorndike), Constructivism (Piaget, Vygotsky), Gestalt (Kohler, Koffka), Observational (Bandura).',
+
+            // III. Pedagogical Concerns
+            'Teaching and its relationship with learning and learner.',
+            'Learners in Contexts: Children from diverse contexts (CWSN), Inclusive Education.',
+            'Pedagogic Methods (Enquiry based, Project based, Survey, Cooperative/Collaborative learning).',
+            'Issues in organizing learning in classroom (Study habits, Self learning, Learning styles).',
+            'Paradigms of organizing Learning (Teacher centric, Subject centric and Learner centric).',
+            'Teaching as Planned activity (Elements of Planning, Phases of Teaching).',
+            'Learning resources (Self, Home, School, Community, Technology).',
+            'Classroom Management (Role of student/teacher, Guidance & Counseling, Rights of a child).',
+            'Assessment: Distinction between Assessment for Learning & Assessment of Learning (CCE).',
+          ],
+        },
+        {
+          paperId: 'paper-i-language-i-ii',
+          paperName: 'Language I & II (English)',
+          type: 'Objective (MCQ)',
+          totalMarks: 60,
+          topics: [
+            'Language I (Telugu/Urdu/Hindi/Kannada/Tamil/Odia): Content (Unseen Passages, Grammar, Vocabulary) and Methodology.',
+            'Language II (English): Grammar (Parts of Speech, Tenses, Articles, Prepositions, Clauses, Active/Passive Voice, Direct/Indirect Speech, Degrees of Comparison, Question Tags).',
+            'English Vocabulary (Synonyms, Antonyms, Spellings, Phrasal Verbs, Word Formation).',
+            'Composition, Comprehension, Correction of Sentences.',
+            'Methodology: Aspects of English, Objectives of teaching English, Development of Language skills (LSRW), Communicative skills.',
+          ],
+        },
+        {
+          paperId: 'paper-i-maths',
+          paperName: 'Mathematics',
+          type: 'Objective (MCQ)',
+          totalMarks: 30,
+          topics: [
+            'Content: Number System (Natural, Whole, Integers, Rational Numbers, Place Value, L.C.M./G.C.D.), Fractions, Arithmetic (Unitary method, Averages, Ratio & Proportion, Percentages, Time & Work), Algebra (Basic Terminology, Linear Equations), Geometry (2D & 3D Shapes, Angles, Triangles), Data Handling, Mensuration (Area, Perimeter, Volume of Cube/Cuboid).',
+            'Pedagogy: Aims, Values, Instructional Objectives, Methods of Teaching, TLM, Instructional Planning, CCE, Diagnostic & Remedial Teaching.',
+          ],
+        },
+        {
+          paperId: 'paper-i-evs',
+          paperName: 'Environmental Studies',
+          type: 'Objective (MCQ)',
+          totalMarks: 30,
+          topics: [
+            'Content: Family, Food, Health & Hygiene, Water, Air, Shelter, Natural Resources, Our Universe (Solar System), Plants and Animals, Professions and Services, Transport and Communication.',
+            'Pedagogy: Aims and Objectives of Teaching EVS, Teaching Methods, Learning Resources, CCE, Evaluation.',
+          ],
+        },
+      ],
+      totalMarks: 150,
+      notes: 'Paper I-A is for Regular Schools. Paper I-B includes Special Education Pedagogy.',
+    },
+    {
+      stageId: 'tet-paper-ii',
+      stageName: 'Paper II (Classes 6 to 8 Teachers)',
+      papers: [
+        {
+          paperId: 'paper-ii-cdp',
+          paperName: 'Child Development & Pedagogy',
+          type: 'Objective (MCQ)',
+          totalMarks: 30,
+          topics: [
+            '**Development of Child, Understanding Learning, and Pedagogical Concerns** (Same detailed syllabus as Paper I, but applied to the age group 11-14 with a focus on adolescent psychology and advanced educational issues).',
+          ],
+        },
+        {
+          paperId: 'paper-ii-language-i-ii',
+          paperName: 'Language I & II (English)',
+          type: 'Objective (MCQ)',
+          totalMarks: 60,
+          topics: [
+            'Language I (Regional Languages): Content and Methodology (Higher difficulty level).',
+            'Language II (English): Grammar (Detailed Parts of Speech, Advanced Clauses), Vocabulary, Reading Comprehension, and Methodology (Aspects of English, LSRW Skills, Communicative skills).',
+          ],
+        },
+        {
+          paperId: 'paper-ii-subject-option',
+          paperName: 'Mathematics & Science OR Social Studies OR Language Subject',
+          type: 'Objective (MCQ)',
+          totalMarks: 60,
+          sections: [
+            {
+              sectionName: 'Mathematics (Content & Methodology)',
+              topics: [
+                'Content: Number System (Prime/Composite, Real Numbers, Exponents, Logarithms), Sets, Algebra (Expressions, Factorization, Linear/Quadratic Equations, Progressions AP/GP), Geometry (Euclid, Lines & Angles, Triangles, Quadrilaterals, Polygons, Circles), Coordinate Geometry, Mensuration (Area/Volume of 2D & 3D Solids), Data Handling (Statistics & Probability), Trigonometry (Ratios, Identities).',
+                'Methodology: Aims, Values, Methods of Teaching Math, Instructional Planning, CCE, Diagnostic & Remedial Teaching.',
+              ],
+            },
+            {
+              sectionName: 'Science (Content & Methodology)',
+              topics: [
+                'Physics: Natural Resources (Air, Water), Our Universe (Solar System, Eclipses), Light, Sound, Mechanics (Kinematics, Dynamics), Magnetism, Electricity (Circuits, Ohm’s Law).',
+                'Chemistry: Matter around us, Laws of Chemical Combination, Atomic Structure, Metallurgy.',
+                'Biology: Parts of a plant & functions, Plant Reproduction, Nutrition in Plants, Plant Processes (Photosynthesis, Respiration), Microbes, Our Environment (Ecosystems, Biodiversity, Pollution).',
+                'Methodology: Aims and Objectives of Teaching Science, Teaching Methods (Activity-based), TLM, Evaluation.',
+              ],
+            },
+            {
+              sectionName: 'Social Studies (Content & Methodology)',
+              topics: [
+                'Geography: DIVERSITY ON THE EARTH (Universe, Earth Movements, Environment, Maps), Landforms, Resources, Climate, Geography of India and A.P., Natural Regions, Natural Hazards.',
+                'History & Civics: POLITICAL SYSTEMS AND GOVERNANCE (Early Life, Kingdoms & Empires-Mauryan/Gupta/Mughal, Delhi Sultanate, 1857 Revolt, Freedom Struggle), SOCIAL ORGANISATION AND INEQUITIES (Equality, Constitutional Provisions, Women/Caste/Reform, Marginalisation, Judiciary, Laws).',
+                'Economics: PRODUCTION EXCHANGE AND LIVELIHOODS (Markets, Consumer Protection, Road Safety, Mineral/Power Resources, Development, Poverty).',
+                'Culture: RELIGION AND SOCIETY (Religions, Bhakti/Sufi Movement), CULTURE AND COMMUNICATION (Media, Transport).',
+                'Methodology: Approaches (Collaborative, Problem Solving), Concept Mapping, Assessment Tools.',
+              ],
+            },
+          ],
+        },
+      ],
+      totalMarks: 150,
+      notes: 'Paper II-A is for Math/Science or Social Studies teachers. Paper II-B is for Special Schools.',
+    },
+  ],
+  totalStages: 2,
+},
+             {
+  examId: 'ap-dsc',
+  examName: 'AP DSC (Teacher Recruitment)',
+  description: 'Andhra Pradesh District Selection Committee (TRT) for teacher recruitment (SGT, School Assistant, TGT, PGT). Selection typically includes 80% TRT score + 20% TET score.',
+  stages: [
+    {
+      stageId: 'dsc-main-exam',
+      stageName: 'Teacher Recruitment Test (TRT) - Written Examination (80 Marks)',
+      papers: [
+        {
+          paperId: 'gk-ca',
+          paperName: 'General Knowledge & Current Affairs',
+          type: 'Objective (MCQ)',
+          totalMarks: '8 to 10', // 8 marks for SGT, 10 marks for School Assistant
+          totalQuestions: '16 to 20',
+          topics: [
+            'Standard GK and events of the current year.',
+            'National and international events, Scientific, Cultural, and Economic developments.',
+            'Socio-political issues and government initiatives related to Andhra Pradesh and India.',
+          ],
+        },
+        {
+          paperId: 'perspectives-in-education',
+          paperName: 'Perspectives in Education (PIE)',
+          type: 'Objective (MCQ)',
+          totalMarks: '4 to 5', // 4 marks for SGT, 5 marks for School Assistant
+          topics: [
+            'History of Education (Ancient, Medieval, British Era Commissions: Woods, Hunter, Sargent, Kothari, NPE-1986, NEP-2020).',
+            'Teacher Empowerment (Code of conduct, Professional development, Motivation, Organizations).',
+            'Educational Concerns in Contemporary India (Democracy, Equality, Literacy, Value Education, Inclusive Education).',
+            'Acts / Rights (RTE Act 2009, NCF 2005, Human Rights).',
+            'Programs like SSA, RMSA, NPEGEL, KGBVs.',
+          ],
+        },
+        {
+          paperId: 'educational-psychology',
+          paperName: 'Educational Psychology',
+          type: 'Objective (MCQ)',
+          totalMarks: '5 to 8', // 8 marks for SGT, 5 marks for School Assistant
+          topics: [
+            'Development of Child (Concepts of Growth/Maturation, Principles of Development, Factors influencing development, Theories by Piaget, Kohlberg, Erikson).',
+            'Individual Differences (Intelligence theories - Multiple Intelligence, IQ, EQ; Creativity, Aptitude, Attitude, Habits).',
+            'Learning (Theories - Behaviourism, Constructivism; Learning Curves, Transfer of Learning, Memory, Forgetting, Inclusive Education).',
+            'Personality (Nature, Theories, Assessment, Emotional Intelligence, Adjustment, Mental Health).',
+            'Classroom Implications (Problem solving, Guidance, Counseling).',
+          ],
+        },
+        {
+          paperId: 'content-methodology',
+          paperName: 'Content & Methodology of Concerned Subject (SGT: All Subjects; SA: One Subject)',
+          type: 'Objective (MCQ)',
+          totalMarks: 60, // Total marks for this section (SGT: 60; SA: 40 Content + 20 Methodology)
+          sections: [
+            {
+              sectionName: 'Content (Maximum Weightage)',
+              topics: [
+                'SGT: Content based on AP State Board Textbooks from **Classes III to VIII** (Difficulty level up to Class X). Includes: Language I & II, Mathematics, Science (Physical & Biological), Social Studies.',
+                'School Assistant (SA): Content based on AP State Board Textbooks from **Classes VI to Intermediate** level syllabus in the concerned subject (Maths, Bio. Science, Physical Science, Social Studies, English, etc.).',
+              ],
+            },
+            {
+              sectionName: 'Methodology (Pedagogy)',
+              topics: [
+                'Aims, Objectives, and Values of Teaching the specific subject.',
+                'Methods of Teaching (e.g., Activity-based, Problem-solving, Project method).',
+                'Teaching Learning Material (TLM) and Resources.',
+                'Lesson Planning, Unit Planning, Academic Standards.',
+                'Evaluation and Assessment (Formative, Summative, CCE).',
+              ],
+            },
+          ],
+        },
+      ],
+      notes: 'The structure above is primarily for SGT (Secondary Grade Teacher). For School Assistants, the focus shifts entirely to the candidate\'s specialization subject for Content & Methodology.',
+    },
+  ],
+},
               { examId: 'apset', examName: 'APSET (State Eligibility Test for Lecturers)', description: 'AP State Eligibility Test for Assistant Professor/Lecturer.', stages: [] },
               { examId: 'deecet', examName: 'DEECET (Diploma in Elementary Education CET)', description: 'AP Diploma in Elementary Education Common Entrance Test.', stages: [] },
           ]
@@ -709,116 +1061,265 @@ export const examCategories: ExamCategory[] = [
           category: 'Andhra Pradesh - Entrance Exams (Higher Education)',
           exams: [
             {
-              examId: 'ap-eapcet',
-              examName: 'EAMCET (AP EAPCET)',
-              description: 'Engineering, Agriculture, Pharmacy Common Entrance Test in Andhra Pradesh.',
-              stages: [
-                {
-                  stageId: 'eapcet-exam',
-                  stageName: 'EAPCET Exam',
-                  papers: [
-                    {
-                      paperId: 'engineering-stream',
-                      paperName: 'Engineering Stream',
-                      type: 'Objective (MCQ)',
-                      duration: '3 hours',
-                      totalMarks: 160,
-                      sections: [
-                        {
-                          sectionName: 'Physics',
-                          topics: [
-                            'Physical world and Measurement',
-                            'Kinematics',
-                            'Laws of Motion',
-                            'Work, Energy and Power',
-                            'Motion of System of Particles and Rigid Body',
-                            'Gravitation',
-                            'Properties of Bulk Matter',
-                            'Thermodynamics',
-                            'Behaviour of Perfect Gas and Kinetic Theory',
-                            'Oscillations and Waves',
-                          ],
-                        },
-                        {
-                          sectionName: 'Chemistry',
-                          topics: [
-                            'Some Basic Concepts of Chemistry',
-                            'Atomic Structure',
-                            'Chemical Bonding and Molecular Structure',
-                            'States of Matter: Gases and Liquids',
-                            'Thermodynamics',
-                            'Equilibrium',
-                            'Redox Reactions',
-                            'Hydrogen',
-                            'The p-Block Elements',
-                            'The d- and f-Block Elements',
-                            'Organic Chemistry - Some Basic Principles and Techniques',
-                            'Hydrocarbons',
-                            'Environmental Chemistry',
-                          ],
-                        },
-                        {
-                          sectionName: 'Mathematics',
-                          topics: [
-                            'Relations and Functions',
-                            'Algebra',
-                            'Trigonometry',
-                            'Analytical Geometry',
-                            'Differential Calculus',
-                            'Integral Calculus',
-                            'Vectors',
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
+  examId: 'ap-eapcet',
+  examName: 'EAMCET (AP EAPCET)',
+  description: 'Engineering, Agriculture, Pharmacy Common Entrance Test in Andhra Pradesh.',
+  stages: [
+    {
+      stageId: 'eapcet-exam',
+      stageName: 'EAPCET Exam',
+      papers: [
+        {
+          paperId: 'engineering-stream',
+          paperName: 'Engineering Stream (MPC)',
+          type: 'Objective (MCQ)',
+          duration: '3 hours',
+          totalMarks: 160,
+          sections: [
+            { 
+              sectionName: 'Physics', 
+              marks: 40, 
+              topics: [
+                'Physical world and Measurement', 
+                'Kinematics', 
+                'Laws of Motion', 
+                'Work, Energy and Power', 
+                'Motion of System of Particles and Rigid Body', 
+                'Gravitation', 
+                'Properties of Bulk Matter', 
+                'Thermodynamics', 
+                'Electricity & Magnetism', 
+                'Oscillations and Waves', 
+                'Modern Physics'
+              ] 
+            },
+            { 
+              sectionName: 'Chemistry', 
+              marks: 40, 
+              topics: [
+                'Some Basic Concepts of Chemistry', 
+                'Atomic Structure', 
+                'Chemical Bonding and Molecular Structure', 
+                'States of Matter', 
+                'Thermodynamics', 
+                'Equilibrium', 
+                'Redox Reactions', 
+                'The s, p, d, & f-Block Elements', 
+                'Organic Chemistry Principles', 
+                'Hydrocarbons', 
+                'Environmental Chemistry'
+              ] 
+            },
+            { 
+              sectionName: 'Mathematics', 
+              marks: 80, 
+              topics: [
+                'Relations and Functions', 
+                'Algebra (Matrices, Determinants)', 
+                'Trigonometry', 
+                'Analytical Geometry (2D and 3D)', 
+                'Differential Calculus', 
+                'Integral Calculus', 
+                'Vectors'
+              ] 
+            },
+          ],
+          notes: 'Syllabus based on the Intermediate (Class XI and XII) curriculum of AP Board.',
+        },
+        {
+          paperId: 'agriculture-pharmacy-stream',
+          paperName: 'Agriculture & Pharmacy Stream (BiPC)',
+          type: 'Objective (MCQ)',
+          duration: '3 hours',
+          totalMarks: 160,
+          sections: [
+            { 
+              sectionName: 'Physics', 
+              marks: 40,
+              // Explicitly repeating the topics as requested, confirming they are the same as MPC
+              topics: [
+                'Physical world and Measurement', 
+                'Kinematics', 
+                'Laws of Motion', 
+                'Work, Energy and Power', 
+                'Motion of System of Particles and Rigid Body', 
+                'Gravitation', 
+                'Properties of Bulk Matter', 
+                'Thermodynamics', 
+                'Electricity & Magnetism', 
+                'Oscillations and Waves', 
+                'Modern Physics'
+              ] 
+            },
+            { 
+              sectionName: 'Chemistry', 
+              marks: 40,
+              // Explicitly repeating the topics as requested, confirming they are the same as MPC
+              topics: [
+                'Some Basic Concepts of Chemistry', 
+                'Atomic Structure', 
+                'Chemical Bonding and Molecular Structure', 
+                'States of Matter', 
+                'Thermodynamics', 
+                'Equilibrium', 
+                'Redox Reactions', 
+                'The s, p, d, & f-Block Elements', 
+                'Organic Chemistry Principles', 
+                'Hydrocarbons', 
+                'Environmental Chemistry'
+              ]
+            },
+            { 
+              sectionName: 'Botany', 
+              marks: 40,
+              topics: ['Plant Diversity', 'Structural Organization', 'Physiology', 'Genetics', 'Ecology', 'Biotechnology']
+            },
+            { 
+              sectionName: 'Zoology', 
+              marks: 40,
+              topics: ['Animal Diversity', 'Human Physiology', 'Reproduction', 'Genetics & Evolution', 'Applied Biology']
+            },
+          ],
+          notes: 'Physics and Chemistry topics are common to both streams. Biology topics (Botany & Zoology) cover the Class XI and XII curriculum.',
+        },
+      ],
+    },
+  ],
+  totalMarks: 160,
+},
+           {
+  examId: 'ap-ecet',
+  examName: 'AP ECET',
+  description: 'For Diploma Holders seeking lateral entry into B.Tech courses in Andhra Pradesh.',
+  stages: [
+    {
+      stageId: 'ecet-exam',
+      stageName: 'ECET Exam (200 Marks)',
+      papers: [
+        {
+          paperId: 'ecet-common-subjects',
+          paperName: 'Common Subjects (Maths, Physics, Chemistry)',
+          type: 'Objective (MCQ)',
+          totalMarks: 100,
+          sections: [
+            {
+              sectionName: 'Engineering Mathematics (50 Marks)',
+              marks: 50,
+              topics: [
+                'Matrices (Determinants, Inverse, Rank, Linear Equations)',
+                'Trigonometry (Compound Angles, Inverse, Properties of Triangles)',
+                'Analytical Geometry',
+                'Differentiation and its Applications',
+                'Integration and Its Applications',
+                'Differential Equations',
+                'Vector Algebra, Complex Numbers, Partial Fractions',
               ],
-              totalMarks: 160,
             },
             {
-              examId: 'ap-ecet',
-              examName: 'AP ECET',
-              description: 'For Diploma Holders seeking lateral entry into B.Tech courses in Andhra Pradesh.',
-              stages: [
-                {
-                  stageId: 'ecet-exam',
-                  stageName: 'ECET Exam',
-                  papers: [
-                    {
-                      paperId: 'ecet-paper',
-                      paperName: 'Engineering Common Entrance Test',
-                      type: 'Objective (MCQ)',
-                      duration: '3 hours',
-                      totalMarks: 200,
-                      sections: [
-                        {
-                          sectionName: 'Engineering Mathematics',
-                          topics: [
-                            'Matrices and Determinants',
-                            'Vector Algebra',
-                            'Calculus',
-                            'Differential Equations',
-                            'Probability and Statistics',
-                          ],
-                        },
-                        {
-                          sectionName: 'Engineering Subjects',
-                          topics: [
-                            ' Electrical', 
-                            'Mechanical', 
-                            'Civil', 
-                            'Electronics',
-                            'Computer Science',
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
+              sectionName: 'Physics (25 Marks)',
+              marks: 25,
+              topics: [
+                'Units and Dimensions, Elements of Vectors',
+                'Kinematics and Friction',
+                'Work, Power, and Energy',
+                'Simple Harmonic Motion and Acoustics',
+                'Heat and Thermodynamics',
+                'Modern Physics (Photoelectric Effect, Radioactivity)',
               ],
-              totalMarks: 200,
             },
+            {
+              sectionName: 'Chemistry (25 Marks)',
+              marks: 25,
+              topics: [
+                'Atomic Structure, Chemical Bonding',
+                'Solutions, Acids and Bases, Electrochemistry',
+                'Water Technology, Corrosion, Polymers, Fuels',
+                'Environmental Chemistry',
+              ],
+            },
+          ],
+        },
+        {
+          paperId: 'ecet-engineering-subjects',
+          paperName: 'Engineering Subject (100 Marks) - Core Branches',
+          type: 'Objective (MCQ)',
+          totalMarks: 100,
+          sections: [
+            {
+              sectionName: 'Civil Engineering Core (CE)',
+              marks: 100,
+              topics: [
+                'Strength of Materials (Stresses, Strains, Shear Force & Bending Moment)', 
+                'Theory of Structures (Trusses, Beams, Columns-Euler/Rankine)', 
+                'Reinforced Concrete Structures (RCC Beams & Slabs)', 
+                'Surveying (Chain, Compass, Levelling, Theodolite)', 
+                'Hydraulics (Flow, Bernoulli’s, Pumps)', 
+                'Irrigation Engineering (Dams, Headworks, Water requirements)',
+              ],
+            },
+            {
+              sectionName: 'Mechanical Engineering Core (ME)',
+              marks: 100,
+              topics: [
+                'Workshop Technology & Conventions in Drawing', 
+                'Engineering Materials and Solid Mechanics', 
+                'Design of Machine Elements', 
+                'Thermodynamics & Heat Power Engineering (Boilers, Turbines)', 
+                'Hydraulic Machines and Pneumatics', 
+                'Refrigeration and Air Conditioning', 
+                'Industrial Management and Engineering', 
+                'Automobile Engineering',
+              ],
+            },
+            {
+              sectionName: 'Electrical & Electronics Engineering Core (EEE)',
+              marks: 100,
+              topics: [
+                'Basic Electrical Engineering (AC/DC Circuits, Network Theorems)', 
+                'DC Machines, Batteries & Measuring Instruments', 
+                'AC Circuits and Transformers (Single/Three-Phase)', 
+                'AC Machines (Alternators, Synchronous & Induction Motors)', 
+                'Power Systems (Generation, Protection, T&D)', 
+                'Basic Electronics & Digital Electronics', 
+                'Power Electronics and Micro Controller (8051)',
+              ],
+            },
+            {
+              sectionName: 'Electronics & Communication Engineering Core (ECE)',
+              marks: 100,
+              topics: [
+                'Electronic Devices and Circuits (Diodes, Transistors, Rectifiers)', 
+                'Circuit Theory & Electronic Measuring Instruments', 
+                'Industrial and Power Electronics', 
+                'Communication Systems (Analog & Digital Modulation)', 
+                'Advanced Communication Systems (Microwave, Satellite)', 
+                'Digital Electronics (Logic Gates, Flip-flops, Counters)', 
+                'Microcontrollers and Microprocessors (8086/8051)', 
+                'Data Communications and Computer Networks, Audio Video Systems',
+              ],
+            },
+            {
+              sectionName: 'Computer Science Engineering Core (CSE)',
+              marks: 100,
+              topics: [
+                'Digital Electronics, Computer Organization & Microprocessors (8086)', 
+                'Data Structures through C', 
+                'Computer Networks, Operating Systems', 
+                'DBMS & RDBMS (SQL, PL/SQL)', 
+                'Object Oriented Programming through C++ & Java Programming', 
+                'Software Engineering (Life Cycle Models, Testing)', 
+                'Web Technologies (HTML, XML, JavaScript, PHP)',
+              ],
+            },
+            // Note: Other branches (Chemical, Mining, EIE, etc.) follow a similar structure.
+          ],
+          notes: 'The syllabus for the Engineering Subject is based on the entire curriculum of the relevant Diploma course.',
+        },
+      ],
+    },
+  ],
+  totalMarks: 200,
+},
             {
               examId: 'ap-icet',
               examName: 'AP ICET',
