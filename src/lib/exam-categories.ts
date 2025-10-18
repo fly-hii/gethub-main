@@ -1,4 +1,3 @@
-
 import type { ExamDetails } from '@/lib/types';
 
 interface ExamCategory {
